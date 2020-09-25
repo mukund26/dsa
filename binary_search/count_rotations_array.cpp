@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-int size;
 
 int binarysearch(int a[],int low,int high){
 	if(low>high)
@@ -23,11 +22,11 @@ int binarysearch(int a[],int low,int high){
 
 
 int main(){
+	int size;
 	cin>>size;
 	int a[size];
 	for(int i=0;i<size;i++)
 		cin>>a[i];
-	int good=binarysearch(a,0,size-1);
-	cout<<good<<endl;
+	cout<<binarysearch(a,0,size-1)<<"\n";
 	return 0;
 }
