@@ -38,8 +38,8 @@ ll modular(ll a,ll n){
 ll modular(ll a,ll n){
 	if(n==0) return 1;
    	else if(n&1){
-   		cout<<modular((a*a)%mod,n/2)<<endl;
-   		cout<<((a*(modular((a*a)%mod,n/2)))%mod)<<endl;
+   		//cout<<modular((a*a)%mod,n/2)<<endl;
+   		//cout<<((a*(modular((a*a)%mod,n/2)))%mod)<<endl;
    		return ((a*(modular((a*a)%mod,n/2)))%mod);
    	} //odd n
     	
