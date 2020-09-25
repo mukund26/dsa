@@ -1,6 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+/*bool issubset(int a[],int n,int sum){
+	if(sum==0) return true;
+	if(n==0 && sum!=0) return false;
+	if(a[n-1]>sum) return issubset(a,n-1,sum);
+	else
+		return issubset(a,n-1,sum) || issubset(a,n-1,sum-a[n-1]);
+}*/
+
 bool issubset(int a[],int n,int sum){
 	bool dp[sum+1][n+1];
 	for(int i=0;i<n+1;i++)
