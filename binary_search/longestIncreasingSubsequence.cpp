@@ -1,6 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+ 
 int good;
 
 void binary_search(vector<int> &v,int l,int r,int val){
